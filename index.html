@@ -374,108 +374,68 @@
        </div>
        <!-- Search Panel -->
        <div class="search_panel active">
-        <form action="#" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start" id="search_form_1">
-         <!-- Source -->
-         <div class="search_item">
-          <div class="search_title">
-           Source
-          </div>
-          <input class="destination search_input" placeholder="Enter starting point" required="required" type="text"/>
-         </div>
-         <!-- Destination -->
-         <div class="search_item">
-          <div class="search_title">
-           Destination
-          </div>
-          <input class="check_in search_input" placeholder="Enter destination" required="required" type="text"/>
-         </div>
-         <!-- Travel Date -->
-         <div class="search_item">
-          <div class="search_title">
-           Travel Date
-          </div>
-          <input class="check_out search_input" required="required" type="date"/>
-         </div>
-         <!-- Adults -->
-         <div class="search_item">
-          <div class="search_title">
-           Adults
-          </div>
-          <select class="dropdown_item_select search_input" name="adults">
-           <option value="1">
-            01
-           </option>
-           <option value="2">
-            02
-           </option>
-           <option value="3">
-            03
-           </option>
-           <option value="4">
-            04
-           </option>
-          </select>
-         </div>
-         <!-- Children -->
-         <div class="search_item">
-          <div class="search_title">
-           Children
-          </div>
-          <select class="dropdown_item_select search_input" name="children">
-           <option value="0">
-            0
-           </option>
-           <option value="1">
-            01
-           </option>
-           <option value="2">
-            02
-           </option>
-           <option value="3">
-            03
-           </option>
-          </select>
-         </div>
-         <!-- Cabin Bag -->
-         <div class="search_item">
-          <div class="search_title">
-           Cabin Bag
-          </div>
-          <label>
-           <input name="cabin_bag" style="margin-right:8px;" type="checkbox"/>
-           Bring cabin bag
-          </label>
-         </div>
-         <!-- Check-In Bag -->
-         <div class="search_item">
-          <div class="search_title">
-           Check-In Bag
-          </div>
-          <label>
-           <input name="checkin_bag" style="margin-right:8px;" type="checkbox"/>
-           Bring check-in bag
-          </label>
-         </div>
-         <!-- Large Item Size -->
-         <div class="search_item">
-          <div class="search_title">
-           Large Item Size (cm)
-          </div>
-          <select class="dropdown_item_select search_input" name="large_item_size">
-           <option value="">
-            None
-           </option>
-           <option value="40">
-            40 cm
-           </option>
-           <option value="60">
-            60 cm
-           </option>
-           <option value="80">
-            80 cm
-           </option>
-          </select>
-         </div>
+      <form
+        id="search_form_1"
+        class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start"
+        action="#"
+      >
+        <!-- Source -->
+        <div class="search_item">
+          <div class="search_title">Source</div>
+          <input
+            type="text"
+            class="destination search_input"
+            placeholder="Enter starting point"
+            required="required"
+          />
+        </div>
+        <!-- Destination -->
+        <div class="search_item">
+          <div class="search_title">Destination</div>
+          <input
+            type="text"
+            class="check_in search_input"
+            placeholder="Enter destination"
+            required="required"
+          />
+        </div>
+        <!-- Travel Date -->
+        <div class="search_item">
+          <div class="search_title">Travel Date</div>
+          <input type="date" class="check_out search_input" required="required" />
+        </div>
+        <!-- Adults -->
+        <div class="search_item">
+          <div class="search_title">Adults</div>
+          <input type="number" min="1" class="search_input" placeholder="No. of Adults" />
+        </div>
+        <!-- Children -->
+        <div class="search_item">
+          <div class="search_title">Children</div>
+          <input type="number" min="0" class="search_input" placeholder="No. of Children" />
+        </div>
+        <!-- Cabin Bag -->
+        <div class="search_item">
+          <div class="search_title">Cabin Bag</div>
+          <input type="text" class="search_input" placeholder="Cabin Bag (Yes/No)" />
+        </div>
+        <!-- Check-In Bag -->
+        <div class="search_item">
+          <div class="search_title">Check-In Bag</div>
+          <input type="text" class="search_input" placeholder="Check-In Bag (Yes/No)" />
+        </div>
+        <!-- Large Item Size -->
+        <div class="search_item">
+          <div class="search_title">Large Item (lbs)</div>
+          <input type="number" min="0" class="search_input" placeholder="Weight in lbs" />
+        </div>
+        <!-- Search Button -->
+        <button class="button search_button">
+          search
+          <span></span><span></span><span></span>
+        </button>
+      </form>
+    </div>
          <!-- Search Button -->
          <button class="button search_button">
           search
